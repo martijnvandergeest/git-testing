@@ -36,6 +36,4 @@ Here’s a list of components that is supported in QAFE Platform.
 * [Tree](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree.html)
 * [Tree Item](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree-item.html)
 
-##Additional Information
-
-[Additional information about components](http://www.qafe.com/developer-docs/#2-ui-components)
+[Additional information](http://www.qafe.com/developer-docs/#2-ui-components)
