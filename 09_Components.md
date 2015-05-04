@@ -60,4 +60,4 @@ Here’s a list of components that is supported in QAFE Platform.
 
 ##Additional Information
 
-[](http://www.qafe.com/developer-docs/#2-ui-components)
+You can view [this](http://www.qafe.com/developer-docs/#2-ui-components) page for extra information about components.
