@@ -1,7 +1,15 @@
 #QAFE Components
 
 A component is a visual item on the screen. A component can be a button, a textfield or some more complex item like a panel which contains other components.
-Here’s a list of components that is supported in QAFE Platform. 
+Here’s a list of components that is supported in QAFE Platform.
+
+##View
+
+* [View](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/window.html)
+* [Panel Definition](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/panel-definition.html)
+* [Menu](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/menu-definition.html)
+* [Toolbar](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/toolbar-definition.html)
+
 ##Controls
 
 * [Button](http://www.qafe.com/static/documentation/api/application-context_files/schemas/application-mapping_xsd/elements/button.html)
@@ -36,6 +44,20 @@ Here’s a list of components that is supported in QAFE Platform.
 * [Tree](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree.html)
 * [Tree Item](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree-item.html)
 
+##DataGrid
+
+* [DataGrid](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/datagrid.html)
+* [Column](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/column.html)
+* [Controlbar](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/controlbar.html)
+* [Overflowpanel](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/overflow.html)
+
+##Table
+
+* [Table](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/table.html)
+* [Table Header](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/header.html)
+* [Table Row](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/row.html)
+* [Table Cell](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/cell.html)
+
 ##Additional Information
 
-You can view [this](http://www.qafe.com/developer-docs/#2-ui-components) page for extra information about components.
+[](http://www.qafe.com/developer-docs/#2-ui-components)
