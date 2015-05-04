@@ -1,8 +1,7 @@
 #QAFE Components
 
 A component is a visual item on the screen. A component can be a button, a textfield or some more complex item like a panel which contains other components.
-Here’s a list of components that is supported in QAFE Platform. Please click [here](http://www.qafe.com/developer-docs/#2-ui-components) for a full description of each component to get a better understanding.
-
+Here’s a list of components that is supported in QAFE Platform. 
 ##Controls
 
 * [Button](http://www.qafe.com/static/documentation/api/application-context_files/schemas/application-mapping_xsd/elements/button.html)
@@ -36,3 +35,7 @@ Here’s a list of components that is supported in QAFE Platform. Please click [
 * [Tilelist](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tilelist.html)
 * [Tree](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree.html)
 * [Tree Item](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/tree-item.html)
+
+##Additional Information
+
+[Additional information about components](http://www.qafe.com/developer-docs/#2-ui-components)
