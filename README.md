@@ -3,7 +3,7 @@ QAFE Platform is a powerful web application that is able to interpret QAML files
 
 Additionally we offer a service to convert Oracle Forms to QAML files to be used with the QAFE Platform. Converting Oracle Forms to ADF is also an option. More information can be found on the [QAFE Website](http://www.qafe.com/ "QAFE Website") or on our [GitHub Page](http://qafedev.github.io/ "QAFE GitHub Page"). 
 
-## Prerequisites
+# Prerequisites
 
 - GIT (version?)
 - Maven (version?)
@@ -12,9 +12,9 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Google Chrome (+ tooling?)
 - IDE supporting Maven
 
-## Setting up the IDE
+# Setting up the IDE
 
-#### Getting the software
+### Getting the software
 
 To get started, first we need to checkout the source code from git.
 The source code can be found in GitHub under the following url: *https://github.com/qafedev/qafe-platform.git*
@@ -25,7 +25,7 @@ git clone -b develop https://github.com/qafedev/qafe-platform.git
 ```
 After running this command the source code can be found in the *qafe-platform* subdirectory.
 
-#### Building the platform
+### Building the platform
 
 Next we need to build the QAFE platform. Open your Maven tool and browse to the *qafe-platform* directory containing the *pom.xml* file. Run the following command to build to QAFE platform: 
 ```
@@ -37,7 +37,7 @@ The build time should take approximately 10 minutes on a modern machine. The *-D
 
 **Note**: The Oracle JDBC driver is not allowed to be distributed by maven repositories. For this follow [this link](http://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/) to make it work. 
 
-####  Importing the software
+###  Importing the software
 
 The QAFE Platform project can be imported in each IDE supporting Maven. Import the *pom.xml* located inside the *qafe-platform* folder to your IDE of choice as an existing Maven project. The code including the proper dependencies should be ready to use.  
 
@@ -45,7 +45,7 @@ The QAFE Platform project can be imported in each IDE supporting Maven. Import t
 
 **Note**: It's possible Eclipse asks to install certain Maven plugins during the import. These plugins should be installed else the platform might not work.
 
-## Debugging code
+# Debugging code
 Server-side code can be debugged using the debug-settings in Eclipse. Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins. Make sure that the platform-project has been built successfully before debugging. First step is to start the GWT Code server using the following Maven- command in the platform/qafe-web-gwt-folder. **Note: Debugging currently only works in Chrome.**
 
 ```
