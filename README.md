@@ -23,7 +23,7 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Maven (version?)
 - Java (version?)
 - GWT (version?)
-- Google Chrome only (+ tooling?)
+- Google Chrome (+ tooling?)
 
 ## Setting up IDE
 
@@ -32,19 +32,19 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 To get started, first we need to checkout the source code from git.
 The source code can be found in GitHub under the following url: *https://github.com/qafedev/qafe-platform.git*
 
-After determining your development location and browsing to that location with a Git tool, you should run the following command to checkout the development branch:
+After determining your development directory and browsing to that directory with a Git tool, you should run the following command to checkout the development branch:
 ```
 git clone -b develop https://github.com/qafedev/qafe-platform.git
 ```
-After running this command the source code can be found in the qafe-platform subdirectory.
+After running this command the source code can be found in the 'qafe-platform' subdirectory.
 
 #### Building the platform
 
-1\. Make sure that Maven is installed on your machine. On Mac OS X Mavericks, Maven is not shipped automatically. To install Maven on OS X, the following command should work:
+Next we need to build the QAFE platform. Open your Maven tool and browse to the 'qafe-platform' directory containing the pom.xml file. Run the following command to build to QAFE platform: 
 ```
-brew install maven
+mvn clean install -DskipTests
 ```
-For other platforms, the latest Maven-binaries can be found [here](http://maven.apache.org/download.cgi). 
+**Note**: If you want, you could change the location of the Maven repository by editing the settings.xml file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Peraps for organizational reasons.
 
 2\. The location of the local maven repository needs to be changed. In the qafe-platform/settings.xml locate the <localRepository> tag. By doing this you won't harm other maven projects on your system. Check it to for example:
 ```
@@ -52,9 +52,7 @@ For other platforms, the latest Maven-binaries can be found [here](http://maven.
 ``` 
 
 3\. After setting the proper location of the local Maven repository, you can start the following command to build the platform:
-```
-mvn clean install -DskipTests
-```
+
 The build time should be approximately 10 minutes on a modern machine. The skiptests in included since database testing using a real database needs to be skipped. The end product of the building the platform are two WAR (Web Application Archive) files, one using GWT and one using Mobile GWT. These WAR-files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, Jboss and Glassfish.
 
 **Note**: The Oracle JDBC driver is not allowed to be distributed by maven repositories. For this follow [this link](http://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/) to make it work. 
