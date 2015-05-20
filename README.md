@@ -6,10 +6,10 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 **Table of contents**
 
 - Prerequisites
-- Setting up QAFE Platform IDE
-- Debugging QAFE Platform
-- Logging QAFE Platform
-- Running QAFE Platform applications
+- Setting up IDE
+- Debugging code
+- Logging
+- Running applications
 - Sample code 
 - Create an QAFE application using the QAFE Platform
 - Updating QAFE Platform on existing QAFE projects
@@ -25,7 +25,9 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - GWT (version?)
 - Google Chrome only (+ tooling?)
 
-## Setting up QAFE Platform IDE
+## Setting up IDE
+
+#### Getting the software
 
 To get started, first we need to checkout the source code from git.
 The source code can be found in GitHub under the following url: *https://github.com/qafedev/qafe-platform.git*
@@ -37,11 +39,7 @@ git clone -b develop https://github.com/qafedev/qafe-platform.git
 After running this command the source code can be found in the qafe-platform subdirectory.
 
 
-## Building QAFE Platform
 
-For Building QAFE Java 7 is needed. See [this link for the downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
-
-Maven version 3.x is used as a project management tool for the QAFE Platform. Maven is an open-source project freely distributed by the Apache Software Foundation. The tool is necessary to be able to build the platform. Before building, make sure that the following tasks are done:
 
 1\. Make sure that Maven is installed on your machine. On Mac OS X Mavericks, Maven is not shipped automatically. To install Maven on OS X, the following command should work:
 ```
