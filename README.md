@@ -38,8 +38,7 @@ git clone -b develop https://github.com/qafedev/qafe-platform.git
 ```
 After running this command the source code can be found in the qafe-platform subdirectory.
 
-
-
+#### Building the platform
 
 1\. Make sure that Maven is installed on your machine. On Mac OS X Mavericks, Maven is not shipped automatically. To install Maven on OS X, the following command should work:
 ```
