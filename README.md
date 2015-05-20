@@ -44,16 +44,11 @@ Next we need to build the QAFE platform. Open your Maven tool and browse to the 
 ```
 mvn clean install -DskipTests
 ```
-**Note**: If you want, you could change the location of the Maven repository by editing the settings.xml file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Peraps for organizational reasons.
-
-2\. The location of the local maven repository needs to be changed. In the qafe-platform/settings.xml locate the <localRepository> tag. By doing this you won't harm other maven projects on your system. Check it to for example:
+**Note**: If you want, you could change the location of the Maven repository by editing the settings.xml file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Perhaps for organizational reasons. Example:
 ```
 <localRepository>/Users/johndoe/develop/qafe/m2/</localRepository>
 ``` 
-
-3\. After setting the proper location of the local Maven repository, you can start the following command to build the platform:
-
-The build time should be approximately 10 minutes on a modern machine. The skiptests in included since database testing using a real database needs to be skipped. The end product of the building the platform are two WAR (Web Application Archive) files, one using GWT and one using Mobile GWT. These WAR-files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, Jboss and Glassfish.
+The build time should be approximately 10 minutes on a modern machine. The '-DskipTests' is included because database testing using a real database needs to be skipped. The end product of the building the platform are two WAR files, one using GWT and one using Mobile GWT. These WAR files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, JBoss and Glassfish.
 
 **Note**: The Oracle JDBC driver is not allowed to be distributed by maven repositories. For this follow [this link](http://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/) to make it work. 
 
