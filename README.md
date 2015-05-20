@@ -11,9 +11,9 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - GWT (version?)
 - Google Chrome (+ tooling?)
 
-## Setting up IDE
+## Setting up the IDE
 
-#### Getting the software
+### Getting the software
 
 To get started, first we need to checkout the source code from git.
 The source code can be found in GitHub under the following url: *https://github.com/qafedev/qafe-platform.git*
@@ -22,24 +22,29 @@ After determining your development directory and browsing to that directory with
 ```
 git clone -b develop https://github.com/qafedev/qafe-platform.git
 ```
-After running this command the source code can be found in the 'qafe-platform' subdirectory.
+After running this command the source code can be found in the *qafe-platform* subdirectory.
 
-#### Building the platform
+### Building the platform
 
-Next we need to build the QAFE platform. Open your Maven tool and browse to the 'qafe-platform' directory containing the pom.xml file. Run the following command to build to QAFE platform: 
+Next we need to build the QAFE platform. Open your Maven tool and browse to the *qafe-platform* directory containing the *pom.xml* file. Run the following command to build to QAFE platform: 
 ```
 mvn clean install -DskipTests
 ```
-The build time should be approximately 10 minutes on a modern machine. The '-DskipTests' is included because database testing using a real database needs to be skipped. The end product of the building the platform are two WAR files, one using GWT and one using Mobile GWT. These WAR files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, JBoss and Glassfish.
+The build time should take approximately 10 minutes on a modern machine. The *-DskipTests* is included because database testing using a real database needs to be skipped. The end product of the building the platform are two WAR files, one using GWT and one using Mobile GWT. These WAR files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, JBoss and Glassfish.
 
-**Note**: If you want, you could change the location of the Maven repository by editing the settings.xml file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Perhaps for organizational reasons. For example `<localRepository>/Users/johndoe/develop/qafe/m2/</localRepository>`.
+**Note**: If you want, you could change the location of the Maven repository by editing the *settings.xml* file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Perhaps for organizational reasons. For example `<localRepository>/Users/johndoe/develop/qafe/m2/</localRepository>`
 
 **Note**: The Oracle JDBC driver is not allowed to be distributed by maven repositories. For this follow [this link](http://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/) to make it work. 
 
-## Modifying QAFE Platform
-The QAFE Platform project can be imported in each IDE supporting Maven. Import the pom.xml in the folder *qafe-platform* in your IDE of choice as an existing Maven project. The code including the proper dependencies should be ready to use.  
+###  Importing the software
 
-## Debugging QAFE Platform
+The QAFE Platform project can be imported in each IDE supporting Maven. Import the *pom.xml* located inside the *qafe-platform* folder to your IDE of choice as an existing Maven project. The code including the proper dependencies should be ready to use.  
+
+#### Eclipse
+
+**Note**: It's possible Eclipse asks to install certain Maven plugins during the import. These plugins should be installed else the platform might not work.
+
+## Debugging code
 Server-side code can be debugged using the debug-settings in Eclipse. Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins. Make sure that the platform-project has been built successfully before debugging. First step is to start the GWT Code server using the following Maven- command in the platform/qafe-web-gwt-folder. **Note: Debugging currently only works in Chrome.**
 
 ```
