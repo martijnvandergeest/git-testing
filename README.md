@@ -17,6 +17,14 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Webservice
 - Licenses
 
+## Prerequisites
+
+- GIT (version?)
+- Maven (version?)
+- Java (version?)
+- GWT (version?)
+-- Google Chrome only (+ tooling?)
+
 ## Setting up QAFE Platform IDE
 
 To get started, first we need to checkout the source code from git.
