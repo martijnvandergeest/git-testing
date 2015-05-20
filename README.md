@@ -41,7 +41,7 @@ The build time should take approximately 10 minutes on a modern machine. The *-D
 
 The QAFE Platform project can be imported in each IDE supporting Maven. Import the *pom.xml* located inside the *qafe-platform* folder to your IDE of choice as an existing Maven project. The code including the proper dependencies should be ready to use.  
 
-###### Eclipse
+##### Eclipse
 
 **Note**: It's possible Eclipse asks to install certain Maven plugins during the import. These plugins should be installed else the platform might not work.
 
