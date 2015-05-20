@@ -5,9 +5,8 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 
 **Table of contents**
 
-- Checking out from git
-- Building QAFE Platform
-- Modifying QAFE Platform
+- Prerequisites
+- Setting up QAFE Platform IDE
 - Debugging QAFE Platform
 - Logging QAFE Platform
 - Running QAFE Platform applications
@@ -18,31 +17,16 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Webservice
 - Licenses
 
-## Checking out from git 
+## Setting up QAFE Platform IDE
 
-First create a directory in which you going to develop 
+To get started, first we need to checkout the source code from git.
+The source code can be found in GitHub under the following url: *https://github.com/qafedev/qafe-platform.git*
 
-(for example on a Mac if username is johndoe: /Users/johndoe/develop/qafe/)
-
-```
-mkdir -p /Users/johndoe/develop/qafe/
-```
-
-Initialize local repository
-
-```
-git init
-```
-
-Checkout the source for the development branch from git
-
+After determining your development location and browsing to that location with a Git tool, you should run the following command to checkout the development branch:
 ```
 git clone -b develop https://github.com/qafedev/qafe-platform.git
-
 ```
-
-The source code can be found in qafe-platform directory
-(so /Users/johndoe/develop/qafe/qafe-platform/
+After running this command the source code can be found in the qafe-platform subdirectory.
 
 
 ## Building QAFE Platform
