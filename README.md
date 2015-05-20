@@ -10,6 +10,7 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Java (version?)
 - GWT (version?)
 - Google Chrome (+ tooling?)
+- IDE supporting Maven
 
 ## Setting up the IDE
 
