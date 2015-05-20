@@ -3,20 +3,6 @@ QAFE Platform is a powerful web application that is able to interpret QAML files
 
 Additionally we offer a service to convert Oracle Forms to QAML files to be used with the QAFE Platform. Converting Oracle Forms to ADF is also an option. More information can be found on the [QAFE Website](http://www.qafe.com/ "QAFE Website") or on our [GitHub Page](http://qafedev.github.io/ "QAFE GitHub Page"). 
 
-**Table of contents**
-
-- Prerequisites
-- Setting up IDE
-- Debugging code
-- Logging
-- Running applications
-- Sample code 
-- Create an QAFE application using the QAFE Platform
-- Updating QAFE Platform on existing QAFE projects
-- Further Reading
-- Webservice
-- Licenses
-
 ## Prerequisites
 
 - GIT (version?)
