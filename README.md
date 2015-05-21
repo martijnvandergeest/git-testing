@@ -82,7 +82,7 @@ To configure SuperDevMode in Eclipse, follow the steps below:
 **Note:** If Eclipse is currently open, close it or restart it after step 1.
 
 1. Add the following to your eclipse.ini: -Dchrome.location=<path to chrome executable> (no quotes)
---* This will be used by the SDBG plugin
+⋅⋅* This will be used by the SDBG plugin
 2. Install Eclipse debugger for GWT SuperDevMode (SDBG) using the following update site: [http://sdbg.github.io/p2](http://sdbg.github.io/p2)
 3. Run the GWT codeserver using the following maven command from the qafe-web-gwt folder: `mvn gwt:run-codeserver`
 4. When the code server is running (reported in the console "The code server is ready.") start the application  from the qafe-web-gwt folder using: `mvn gwt:run`
@@ -90,9 +90,9 @@ To configure SuperDevMode in Eclipse, follow the steps below:
 In the sources tab select workspace or the project you want to debug.
 6. Run the profile in debug mode
 7. When running the chrome profile, a new chrome browser with the application should start. Now we need to generate proper source maps. Do these steps from the newly opened chrome browser.
---* go to your code server url, can be found in the console from where you started the codeserver
---* drag the Dev Mode On button to your bookmark bar
---* go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
+⋅⋅* go to your code server url, can be found in the console from where you started the codeserver
+⋅⋅* drag the Dev Mode On button to your bookmark bar
+⋅⋅* go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
 8. You should now be able to debug from within eclipse. Go to debug perspective, and in the threads view, select the " JS Thread" , you should now see the objects on the heap, etc.
 
 ## Logging QAFE Platform
