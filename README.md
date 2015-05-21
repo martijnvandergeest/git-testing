@@ -51,13 +51,23 @@ It's possible Eclipse asks to install certain Maven plugins during the import. T
 
 ### Server
 
-Server-side code should be debugged using the debug settings in Eclipse. Make sure the platform-project has been build succesfully before debugging. 
+Before you start debugging make sure the project has been builded successfully.
+Go to 'Debug Configurations', select the the **first** qafe-web-gwt under Java Application and press 'Debug'.
 
-An entry point for debugging the server could be `public void init(ServletContext servletContext)` in the `com.qualogy.qafe.web.ContextLoader` class.
+An entry point for debugging the server could be `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class.
+
+**Note: ** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port.
 
 ### Client 1
 
-Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins.
+Client-side code needs additional steps to debug. It uses the 'Super Dev Mode' funtionality of GWT. This enables client-side debugging in the Google Chrome browser without the need for any plug-ins. Currently Google Chrome is the only browser that allows for debugging client-side code.
+
+Before you start debugging make sure the project has been builded successfully. The first step is to start the GWT code server using the following Maven command in the *platform/qafe-web-gwt* folder:
+```
+mvn gwt:run-codeserver
+```
+When the code server has been started successfully open the link stated at the end of the console output. This opens up a web page, which includes two bookmarklets. Add those bookmarklets to your bookmarks-bar by dragging them to that bar. If this does not work, copy the link location of the bookmarklets and create the necessary bookmarks manually.
+
 
 ### Client 2
 
