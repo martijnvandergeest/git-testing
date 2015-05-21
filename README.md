@@ -81,6 +81,7 @@ This should open the 'GWT Development Mode' application. Press the 'Launch Defau
 After (automatic) reloading of the page, open Chrome's Developer Tools and go to the 'Sources' tab. There should be one domain that corresponds to the hostname:port of the codeserver. Inside this domain there should be a *sourcemaps/qafegwt* folder. Select a file inside this folder and click on a line number to create a breakpoint.
 
 A possible entry point for debugging the client could be `public void onModuleLoad()` method in the `com.qualogy.qafe.gwt.client.QAFEGWTWeb` class. This is a starting point for loading the UI.
+
 Another possible entry point could be `private static AsyncCallback<?> createCallBack` method in the `com.qualogy.qafe.gwt.client.ui.renderer.events.CallbackHandler` class. This method is called when, for example, actions are performed on UI elements (like clicking a button).
 
 ### Debugging client-side code in Eclipse
