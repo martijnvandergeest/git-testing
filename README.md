@@ -82,7 +82,7 @@ To configure SuperDevMode in Eclipse, follow the steps below:
 **Note:** If Eclipse is currently open, close it or restart it after step 1.
 
 1. Add the following to your eclipse.ini: -Dchrome.location=<path to chrome executable> (no quotes)
-⋅⋅* This will be used by the SDBG plugin
+  * This will be used by the SDBG plugin
 2. Install Eclipse debugger for GWT SuperDevMode (SDBG) using the following update site: [http://sdbg.github.io/p2](http://sdbg.github.io/p2)
 3. Run the GWT codeserver using the following maven command from the qafe-web-gwt folder: `mvn gwt:run-codeserver`
 4. When the code server is running (reported in the console "The code server is ready.") start the application  from the qafe-web-gwt folder using: `mvn gwt:run`
