@@ -53,6 +53,8 @@ It's possible Eclipse asks to install certain Maven plugins during the import. T
 
 Server-side code should be debugged using the debug settings in Eclipse. Make sure the platform-project has been build succesfully before debugging. 
 
+An entry point for debugging the server could be `public void init(ServletContext servletContext)` in the `com.qualogy.qafe.web.ContextLoader` class.
+
 ### Client 1
 
 Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins.
@@ -60,9 +62,6 @@ Client-side code on the other hand needs additional steps to properly debug. Thi
 ### Client 2
 
 TODO
-
-
-
 
 Server-side code can be debugged using the debug-settings in Eclipse. Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins. Make sure that the platform-project has been built successfully before debugging. First step is to start the GWT Code server using the following Maven- command in the platform/qafe-web-gwt-folder. **Note: Debugging currently only works in Chrome.**
 
