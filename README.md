@@ -54,16 +54,16 @@ It's possible Eclipse asks to install certain Maven plugins during the import. T
 Before you start debugging make sure the project has been builded successfully.
 Go to 'Debug Configurations', select the the **first** qafe-web-gwt under Java Application and press 'Debug'.
 
-An entry point for debugging the server could be `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class.
+A possible place for debugging the server is the `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class. This is the starting point for loading the server.
 
 **Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port. Finally, continue following the 'client' steps below.
 
-### Client 1
+### Debugging client-side code in the browser
 
-Client-side code needs additional steps to debug. It uses the 'Super Dev Mode' funtionality of GWT. This enables client-side debugging in the Google Chrome browser without the need for any plug-ins. Currently Google Chrome is the only browser that allows for debugging client-side code.
+Client-side code needs additional steps to debug. It uses the 'Super Dev Mode' funtionality of GWT. This enables client-side debugging in the Google Chrome browser without the need for any plug-ins. Currently only browsers that support sourcemaps allow for debugging client-side code. In this section we've used Google Chrome for explaining things. 
 
 Before you start debugging make sure the project has been builded successfully. 
-The first step is to start the GWT code server using the following Maven command on the *platform/qafe-web-gwt* folder:
+The first step is to start the GWT codeserver using the following Maven command on the *platform/qafe-web-gwt* folder:
 ```
 mvn gwt:run-codeserver
 ```
@@ -73,10 +73,14 @@ The next step is to start QAFE-Web-GWT using the following Maven command on the 
 ```
 mvn gwt:run
 ```
-This should open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark.
-After reloading, open Google Chrome's Developer Tools and go to the 'Sources' tab. Select a file followed by clicking on a line number to create a breakpoint.
+This should open the 'GWT Development Mode' application. Press the 'Launch Default Browser' button to open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark. 
 
-### Client (GWT Debugging from Confluence)
+After (automatic) reloading of the page, open Chrome's Developer Tools and go to the 'Sources' tab. There should be one domain that corresponds to the hostname:port of the codeserver. Inside this domain there should be a *sourcemaps/qafegwt* folder. Select a file inside this folder and click on a line number to create a breakpoint.
+
+A possible entry point for debugging the client could be `public void onModuleLoad()` method in the `com.qualogy.qafe.gwt.client.QAFEGWTWeb` class. This is a starting point for loading the UI. 
+Another possible entry point could be `private static AsyncCallback<?> createCallBack` method in the `com.qualogy.qafe.gwt.client.ui.renderer.events.CallbackHandler` class. This method is called when, for example, actions are performed on UI elements (like clicking a button).
+
+### Debugging client-side code in Eclipse
 
 To configure SuperDevMode in Eclipse, follow the steps below:
 **Note:** If Eclipse is currently open, close it or restart it after step 1.
