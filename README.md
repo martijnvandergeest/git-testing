@@ -74,27 +74,32 @@ The next step is to start QAFE-Web-GWT using the following Maven command on the 
 mvn gwt:run
 ```
 This should open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark.
-After reloading, open Google Chrome Developer Tools and go to the 'Sources' tab. Select a file followed by clicking on a line number to create a breakpoint.
+After reloading, open Google Chrome's Developer Tools and go to the 'Sources' tab. Select a file followed by clicking on a line number to create a breakpoint.
 
 ### Client 2
 
-TODO
+To configure SuperDevMode in Eclipse, follow the steps below:
+**Note:** If Eclipse is currently open, close it or restart it after step 1.
 
-Server-side code can be debugged using the debug-settings in Eclipse. Client-side code on the other hand needs additional steps to properly debug. This is done using the Super Dev Mode-functionality of GWT. This enables client-side debugging in the Chrome browser without the need for any plug-ins. Make sure that the platform-project has been built successfully before debugging. First step is to start the GWT Code server using the following Maven- command in the platform/qafe-web-gwt-folder. **Note: Debugging currently only works in Chrome.**
-
+1. Add the following to your eclipse.ini: -Dchrome.location=<path to chrome executable> (no quotes)
+--* This will be used by the SDBG plugin
+2. Install Eclipse debugger for GWT SuperDevMode (SDBG) using the following update site: [http://sdbg.github.io/p2](http://sdbg.github.io/p2)
+3. Run the GWT codeserver using the following maven command from the qafe-web-gwt folder:
 ```
 mvn gwt:run-codeserver
-```  
-
-Open the link stated at the end of the Maven-command. This opens up a web page, which includes two bookmarklets. Add those bookmarklets to your bookmarks-bar by dragging them to bar. If this does not work, copy the link location of the bookmarklets and create the necessary bookmarks manually.
-
-The next step is to start QAFE-Web-GWT with the following Maven-command in the platform/qafe-web-gwt-folder.
-
+```
+4. When the code server is running (reported in the console "The code server is ready.") start the application  from the qafe-web-gwt folder using
 ```
 mvn gwt:run
 ```
-
-This should open the application in your browser. Now enable Super Dev Mode by opening the Dev Mode On-bookmark. You should now be able to debug the client-side code by using the Chrome Developer Tools. (Menu --> Tools --> Developer Tools or use the shortcut: F12) All client-side Java code can be debugged from the source-tab. Debugging i done by selecting a file and clicking on the line number creating a breakpoint.  
+5. With the application running, go to Run -> Run Configurations -> Launch Chrome (added by the SDBG plugin) and create a new profile similar to the image below:
+In the sources tab select workspace or the project you want to debug.
+6. Run the profile in debug mode
+7. When running the chrome profile, a new chrome browser with the application should start. Now we need to generate proper source maps. Do these steps from the newly opened chrome browser.
+--* go to your code server url, can be found in the console from where you started the codeserver
+--* drag the Dev Mode On button to your bookmark bar
+--* go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
+8. You should now be able to debug from within eclipse. Go to debug perspective, and in the threads view, select the " JS Thread" , you should now see the objects on the heap, etc.
 
 ## Logging QAFE Platform
 QAFE Platform uses the Java Logging API as its logging framework. Therefore, configuring logging behaviour can be accomplished by applying changes to the logging.properties of your JRE's lib/logging.properties file. Also, a logging.properties file location can be specified using the system property java.util.logging.config.file.
