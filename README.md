@@ -103,7 +103,7 @@ In the sources tab select workspace or the project you want to debug.
   c. go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
 8. You should now be able to debug from within eclipse. Go to debug perspective, and in the threads view, select the " JS Thread" , you should now see the objects on the heap, etc.
 
-## Logging QAFE Platform
+# Logging
 QAFE Platform uses the Java Logging API as its logging framework. Therefore, configuring logging behaviour can be accomplished by applying changes to the logging.properties of your JRE's lib/logging.properties file. Also, a logging.properties file location can be specified using the system property java.util.logging.config.file.
 
 When deployed into a tomcat container different rules apply as tomcat implements its own Log Manager. See http://tomcat.apache.org/tomcat-7.0-doc/logging.html under java.util.logging for the specifics.
@@ -120,7 +120,7 @@ java.util.logging.ConsoleHandler.level = INFO
 ```
 See for a complete list of log levels: http://docs.oracle.com/javase/7/docs/api/java/util/logging/Level.html.
 
-## Running QAFE Platform applications
+# Running QAFE Platform applications
 The WAR-file for the QAFE-platform based on GWT is found in the target-folder of the qafe-webapps project after building the platform. This file contains the platform and a basic Hello World application. A web server is necessary to run the application, as discussed in the build-section. Copy the file to the application-folder of your web server (i.e. the webapps-folder in Tomcat) and run the server. 
 
 The link to the application is dependent on the port number specified in your web server and the filename of the WAR-file without the extension. For example, if the port number is 8080 (standard for Tomcat) and the filename is qafe-web-gwt.war, then the link would be:
@@ -129,7 +129,7 @@ The link to the application is dependent on the port number specified in your we
 http://localhost:8080/qafe-web-gwt/
 ```
 
-## Sample Code
+# Sample Code
 The sample code underneath is a simple Hello World application which includes a window with a button and a textfield inside. When the user clicks on the button, a dialog panel will show up containing "Hello World" as the title and the content of the textfield as a message.
 
 ```xml
@@ -167,10 +167,10 @@ The sample code underneath is a simple Hello World application which includes a 
 </application-mapping>  
 ```
 
-## Create an QAFE application using the QAFE Platform
+# Create an QAFE application using the QAFE Platform
 The WAR-file for the QAFE-platform based on GWT is found in the target-folder of the qafe-webapps project after building the platform. First unpack the WAR-file to a different folder (e.g. C:\qafe-web-gwt-x.x.x). After unpacking the WAR-file, create a new QAFE Project in QAML-builder (Eclipse plugin) and set the "Path to QAFE" setting to match the location of the unpacked WAR-file (in our example C:\qafe-web-gwt-x.x.x).
 
-## Updating QAFE Platform on existing QAFE projects
+# Updating QAFE Platform on existing QAFE projects
 To update an existing project, modify the project's main pom.xml file and change the fileset configuration in the prepare-package phase to match the required platform version (e.g.):
 ```
 ...
@@ -188,11 +188,11 @@ To update an existing project, modify the project's main pom.xml file and change
 
 QAML-builder should now recognize the QAFE platform and also be able to create and run new QAFE applications.
 
-## Further Reading
+# Further Reading
 Further information regarding the QAML documentation and Forms Conversion can be found on our [QAFE Developer Documentation](https://github.com/qafedev/qafedev.github.io/blob/master/README.md "QAFE Developer Documentation")
 
-## Webservice
+# Webservice
 Information on how to build, run and use the QAFE SOAP webservice see the [Webservice README](https://github.com/qafedev/qafe-platform/tree/develop/qafe-webservice/README.md "QAFE Webservice Documentation").
 
-## Licenses
+# Licenses
 Information regarding the licenses used in the QAFE Platform can be found on the [Depedencies page](https://github.com/qafedev/qafe-platform/blob/master/dependencies.md "QAFE dependencies") on GitHub. 
