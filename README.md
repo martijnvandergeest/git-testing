@@ -76,7 +76,7 @@ mvn gwt:run
 This should open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark.
 After reloading, open Google Chrome's Developer Tools and go to the 'Sources' tab. Select a file followed by clicking on a line number to create a breakpoint.
 
-### Client 2
+### Client (GWT Debugging from Confluence)
 
 To configure SuperDevMode in Eclipse, follow the steps below:
 **Note:** If Eclipse is currently open, close it or restart it after step 1.
