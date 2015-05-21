@@ -56,18 +56,25 @@ Go to 'Debug Configurations', select the the **first** qafe-web-gwt under Java A
 
 An entry point for debugging the server could be `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class.
 
-**Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port.
+**Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port. Finally, continue following the 'client' steps below.
 
 ### Client 1
 
 Client-side code needs additional steps to debug. It uses the 'Super Dev Mode' funtionality of GWT. This enables client-side debugging in the Google Chrome browser without the need for any plug-ins. Currently Google Chrome is the only browser that allows for debugging client-side code.
 
-Before you start debugging make sure the project has been builded successfully. The first step is to start the GWT code server using the following Maven command in the *platform/qafe-web-gwt* folder:
+Before you start debugging make sure the project has been builded successfully. 
+The first step is to start the GWT code server using the following Maven command on the *platform/qafe-web-gwt* folder:
 ```
 mvn gwt:run-codeserver
 ```
 When the code server has been started successfully open the link stated at the end of the console output. This opens up a web page, which includes two bookmarklets. Add those bookmarklets to your bookmarks-bar by dragging them to that bar. If this does not work, copy the link location of the bookmarklets and create the necessary bookmarks manually.
 
+The next step is to start QAFE-Web-GWT using the following Maven command on the *platform/qafe-web-gwt* folder:
+```
+mvn gwt:run
+```
+This should open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark.
+After reloading, open Google Chrome Developer Tools and go to the 'Sources' tab. Select a file followed by clicking on a line number to create a breakpoint.
 
 ### Client 2
 
