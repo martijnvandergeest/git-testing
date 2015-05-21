@@ -56,7 +56,7 @@ Go to 'Debug Configurations', select the the **first** qafe-web-gwt under Java A
 
 An entry point for debugging the server could be `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class.
 
-**Note: ** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port.
+**Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port.
 
 ### Client 1
 
