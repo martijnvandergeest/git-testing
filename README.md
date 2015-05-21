@@ -5,14 +5,14 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 
 # Prerequisites
 
-## Mandatory
+### Mandatory
 
 - GIT: [Tutorial](http://git-scm.com/book/en/v2/) - [Downloads](https://git-scm.com/downloads) - [Download Windows Tool (Git Bash)](https://msysgit.github.io/)
 - Maven 3.x: [Tutorial](https://maven.apache.org/guides/getting-started/) [Downloads](https://maven.apache.org/download.cgi)
 - Java 1.6.x: [Downloads](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html)
-- GWT 2.5.1: [Tutorial](http://www.gwtproject.org/doc/latest/DevGuide.html)
- 
-## Optional but recommended
+- Google Web Toolkit 2.5.1: [Tutorial](http://www.gwtproject.org/doc/latest/DevGuide.html)
+- 
+### Optional but recommended
 
 - Eclipse Kepler: [Downloads](http://eclipse.org/kepler/)
 - Google Chrome
