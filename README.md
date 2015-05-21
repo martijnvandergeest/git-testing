@@ -90,9 +90,9 @@ To configure SuperDevMode in Eclipse, follow the steps below:
 In the sources tab select workspace or the project you want to debug.
 6. Run the profile in debug mode
 7. When running the chrome profile, a new chrome browser with the application should start. Now we need to generate proper source maps. Do these steps from the newly opened chrome browser.
-⋅⋅* go to your code server url, can be found in the console from where you started the codeserver
-⋅⋅* drag the Dev Mode On button to your bookmark bar
-⋅⋅* go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
+  a. go to your code server url, can be found in the console from where you started the codeserver
+  b. drag the Dev Mode On button to your bookmark bar
+  c. go back to the application in chrome opened by the launch profile and click the Dev Mode On button (your application will begin to compile and generate the correct sourcemaps)
 8. You should now be able to debug from within eclipse. Go to debug perspective, and in the threads view, select the " JS Thread" , you should now see the objects on the heap, etc.
 
 ## Logging QAFE Platform
