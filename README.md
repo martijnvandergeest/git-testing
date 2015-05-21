@@ -11,7 +11,7 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 - Maven 3.x: [Tutorial](https://maven.apache.org/guides/getting-started/) [Downloads](https://maven.apache.org/download.cgi)
 - Java 1.6.x: [Downloads](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html)
 - Google Web Toolkit 2.5.1: [Tutorial](http://www.gwtproject.org/doc/latest/DevGuide.html)
-- 
+
 ### Optional but recommended
 
 - Eclipse Kepler: [Downloads](http://eclipse.org/kepler/)
