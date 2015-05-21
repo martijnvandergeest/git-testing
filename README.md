@@ -5,7 +5,7 @@ Additionally we offer a service to convert Oracle Forms to QAML files to be used
 
 # Prerequisites
 
-- GIT: [Tutorial](http://git-scm.com/book/en/v2/) - [Downloads](https://git-scm.com/downloads) - [Download Windows Tool (Git Bash)](https://msysgit.github.io/)
+- Git: [Tutorial](http://git-scm.com/book/en/v2/) - [Downloads](https://git-scm.com/downloads) - [Download Windows Tool (Git Bash)](https://msysgit.github.io/)
 - Maven 3.x: [Tutorial](https://maven.apache.org/guides/getting-started/) - [Downloads](https://maven.apache.org/download.cgi)
 - Java 1.6.x: [Downloads](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html)
 - Google Web Toolkit 2.5.1: [Tutorial](http://www.gwtproject.org/doc/latest/DevGuide.html)
@@ -34,7 +34,7 @@ Next we need to build the QAFE platform. Open your Maven tool and browse to the 
 ```
 mvn clean install -DskipTests
 ```
-The build time should take approximately 10 minutes on a modern machine. The *-DskipTests* is included because database testing using a real database needs to be skipped. The end product of the building the platform are two WAR files, one using GWT and one using Mobile GWT. These WAR files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, JBoss and Glassfish.
+The build should take approximately 10 minutes on a modern machine. The *-DskipTests* is included because database testing using a real database needs to be skipped. The end product of the building the platform are two WAR files, one using GWT and one using Mobile GWT. These WAR files can be run on most web servers including Apache Tomcat, Jetty, Weblogic, JBoss and Glassfish.
 
 **Note**: If you want, you could change the location of the Maven repository by editing the *settings.xml* file in the same directory. One of the more obvious reasons to do this is if you want seperate Maven repositories for different projects. Perhaps for organizational reasons. For example `<localRepository>/Users/johndoe/develop/qafe/m2/</localRepository>`
 
@@ -42,7 +42,7 @@ The build time should take approximately 10 minutes on a modern machine. The *-D
 
 ##  Importing the software
 
-The QAFE Platform project can be imported in each IDE supporting Maven. Import the *pom.xml* located inside the *qafe-platform* folder to your IDE of choice as an existing Maven project. The code including the proper dependencies should be ready to use.  
+The QAFE Platform project can be imported in each IDE supporting Maven. Import the *pom.xml* located inside the *qafe-platform* folder to your IDE of choice (as an existing Maven project). The code including the proper dependencies should be ready to use.  
 
 ### Eclipse
 
@@ -54,37 +54,37 @@ It's possible Eclipse asks to install certain Maven plugins during the import. T
 
 ### Server
 
-Before you start debugging make sure the project has been builded successfully.
+Before you start debugging make sure the project has been built successfully.
 Go to 'Debug Configurations', select the the **first** qafe-web-gwt under Java Application and press 'Debug'.
 
 A possible place for debugging the server is the `public void init(ServletContext servletContext)` method in the `com.qualogy.qafe.web.ContextLoader` class. This is the starting point for loading the server.
 
-**Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the hostname:port. Finally, continue following the 'client' steps below.
+**Note:** If you want to debug both server and client, press the 'Launch Default Browser' button. Next, remove everything of the url after the *hostname:port*. Finally, skip the next chapter until after the `mvn gwt:run-codeserver` part.
 
 ### Debugging client-side code in the browser
 
 Client-side code needs additional steps to debug. It uses the 'Super Dev Mode' funtionality of GWT. This enables client-side debugging in the Google Chrome browser without the need for any plug-ins. Currently only browsers that support sourcemaps allow for debugging client-side code. In this section we've used Google Chrome for explaining things. 
 
-Before you start debugging make sure the project has been builded successfully. 
+Before you start debugging make sure the project has been built successfully. 
 The first step is to start the GWT codeserver using the following Maven command on the *platform/qafe-web-gwt* folder:
 ```
 mvn gwt:run-codeserver
 ```
 When the code server has been started successfully open the link stated at the end of the console output. This opens up a web page, which includes two bookmarklets. Add those bookmarklets to your bookmarks-bar by dragging them to that bar. If this does not work, copy the link location of the bookmarklets and create the necessary bookmarks manually.
 
-The next step is to start QAFE-Web-GWT using the following Maven command on the *platform/qafe-web-gwt* folder:
+The next step is to start qafe-web-gwt module using the following Maven command on the *platform/qafe-web-gwt* folder:
 ```
 mvn gwt:run
 ```
 This should open the 'GWT Development Mode' application. Press the 'Launch Default Browser' button to open the application in your browser. Now enable 'Super Dev Mode' by opening the 'Dev Mode On' bookmark. 
 
-After (automatic) reloading of the page, open Chrome's Developer Tools and go to the 'Sources' tab. There should be one domain that corresponds to the hostname:port of the codeserver. Inside this domain there should be a *sourcemaps/qafegwt* folder. Select a file inside this folder and click on a line number to create a breakpoint.
+After (automatic) reloading of the page, open Chrome's Developer Tools and go to the 'Sources' tab. There should be one domain that corresponds to the *hostname:port* of the codeserver. Inside this domain there should be a *sourcemaps/qafegwt* folder. Select a file inside this folder and click on a line number to create a breakpoint.
 
 A possible entry point for debugging the client could be `public void onModuleLoad()` method in the `com.qualogy.qafe.gwt.client.QAFEGWTWeb` class. This is a starting point for loading the UI.
 
 Another possible entry point could be `private static AsyncCallback<?> createCallBack` method in the `com.qualogy.qafe.gwt.client.ui.renderer.events.CallbackHandler` class. This method is called when, for example, actions are performed on UI elements (like clicking a button).
 
-### Debugging client-side code in Eclipse
+### Debugging client-side code in IDE
 
 To configure SuperDevMode in Eclipse, follow the steps below:
 **Note:** If Eclipse is currently open, close it or restart it after step 1.
@@ -196,4 +196,3 @@ Information on how to build, run and use the QAFE SOAP webservice see the [Webse
 
 ## Licenses
 Information regarding the licenses used in the QAFE Platform can be found on the [Depedencies page](https://github.com/qafedev/qafe-platform/blob/master/dependencies.md "QAFE dependencies") on GitHub. 
- 
