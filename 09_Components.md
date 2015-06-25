@@ -1,5 +1,5 @@
 #Troubleshooting QAFE
 
-If problems occur while using QAFE, use this section to find a solution.
+If problems occur while using QAFE, use this section to potentially find a solution.
 
 * [Build Failure](http://www.qafe.com/static/documentation/api/application-mapping_files/schemas/application-mapping_xsd/elements/window.html)
