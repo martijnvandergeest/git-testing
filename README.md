@@ -53,8 +53,10 @@ Make sure a Java JDK of version 1.7 or higher is beeing used for building the Ma
 ![Eclipse Java Preferences](assets/images/EclipseJavaPreferences.png)
 If there already is a valid JDK listed, and u wist to make use of the 'Default workspace JRE', make sure it is the default. If it's not the default then click on the checkbox to make it default.
 
-**Optional** If there is no valid JDK, click on 'Add'.
+If there is no valid JDK, click on 'Add'.
 ![Eclipse Java Preferences Add 1](assets/images/EclipseJavaPreferencesAdd1.png)
+
 Select 'Standard VM' and click next.
 ![Eclipse Java Preferences Add 2](assets/images/EclipseJavaPreferencesAdd2.png)
+
 Enter the path to the valid JDK or select it using the directory browser. You should see a list of libraries in te 'JRE system libraries'. Optionally fill in a different 'JRE name'.
