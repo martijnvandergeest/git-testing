@@ -8,7 +8,7 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 
 If you get a 'Build Failure' and none of the above reasons apply, the contents of this page might provide a solution.
 
-# Cause 1: Wrong JDK
+## Wrong JDK
 
 Using a wrong JDK/JRE could result in a 'Build Failure'.
 
@@ -46,3 +46,5 @@ JRE's cannot be used because they do not provide compile functionality.
 ### Solution
 
 Make sure a Java JDK of version 1.7 or higher is beeing used for building the Maven project.
+
+![Eclipse Java Preferences](assets/images/EclipseJavaPreferences.png)
