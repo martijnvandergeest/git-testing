@@ -75,4 +75,4 @@ Select the correct 'Maven Build' on the left side, then select the JRE tab. If y
 
 ![Eclipse Maven Configuration Default](assets/images/EclipseMavenConfigurationAlternate.png)
 
-Apply all changes and run the Maven build, the 'Build Failed' problem should be solved.
+Apply all changes and run the Maven build. The 'Build Failed' problem should be solved.
