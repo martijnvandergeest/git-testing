@@ -14,22 +14,7 @@ Using a wrong JDK/JRE could result in a 'Build Failure'.
 
 ## Symptoms
 
-The console output shows the following during a Maven build.
-```
-[INFO] — maven-compiler-plugin:3.0:compile (default-compile) @ someProject —
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.859s
-[INFO] Finished at: Tue Jun 02 11:38:52 EDT 2015
-[INFO] Final Memory: 6M/15M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) 
-on project someProject:
-Execution default-compile of goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed:
-Unable to load the mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'.
-A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
-```
+The console output shows the following (Note: message's can vary based on Maven version and/or plugins):
 
 ```
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ someProject ---
