@@ -6,7 +6,7 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 - Wrong Maven version
 - Maven Dependency Conflicts
 
-If you get a 'Build Failure' and none of the above reasons apply, this troubleshooting page might provide a solution.
+If you get a 'Build Failure' and none of the above reasons apply, the contents of this page might provide a solution.
 
 # Wrong JDK
 
