@@ -5,10 +5,16 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 - Incorrect configuration
 - Wrong Maven version
 - Maven Dependency Conflicts
-If you get a 'Build Failure' and none of the above reasons apply, please try
+
+If you get a 'Build Failure' and none of the above reasons apply, this troubleshooting page might provide a solution.
+
+# Wrong JDK
+
+Using a wrong JDK/JRE could result in a 'Build Failure'.
 
 ## Symptoms
 
+The console output shows the following during a Maven build.
 ```
 [INFO] — maven-compiler-plugin:3.0:compile (default-compile) @ someProject —
 [INFO] ------------------------------------------------------------------------
