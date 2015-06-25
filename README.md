@@ -3,7 +3,7 @@
 ## Symptoms
 
 ```
-[INFO] — maven-compiler-plugin:3.0:compile (default-compile) @ myFirstPrj —
+[INFO] — maven-compiler-plugin:3.0:compile (default-compile) @ someProject —
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
@@ -12,16 +12,16 @@
 [INFO] Final Memory: 6M/15M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) 
-on project myFirstPrj:
+on project someProject:
 Execution default-compile of goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed:
 Unable to load the mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'.
 A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
 ```
 
 ```
-[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ HelloQafeProject ---
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ someProject ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to D:\Programming\Projects\HelloQafe\HelloQafeProject\target\classes
+[INFO] Compiling 1 source file to D:\Projects\someProject\target\classes
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
