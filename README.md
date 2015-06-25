@@ -50,13 +50,17 @@ Make sure a Java JDK of version 1.7 or higher is beeing used for building the Ma
 - Configure the Maven build to use an 'Alternate JRE' and select a valid JDK.
 
 **Step 1:** First we need to add a valid JDK (1.7 or above) to Eclipse. In the top menu of Eclipse, open the submenu 'Window' and select 'Preferences'. The following screen will be shown:
+
 ![Eclipse Java Preferences](assets/images/EclipseJavaPreferences.png)
+
 If there already is a valid JDK listed, and u wist to make use of the 'Default workspace JRE', make sure it is the default. If it's not the default then click on the checkbox to make it default.
 
 If there is no valid JDK, click on 'Add'.
+
 ![Eclipse Java Preferences Add 1](assets/images/EclipseJavaPreferencesAdd1.png)
 
 Select 'Standard VM' and click next.
+
 ![Eclipse Java Preferences Add 2](assets/images/EclipseJavaPreferencesAdd2.png)
 
 Enter the path to the valid JDK or select it using the directory browser. You should see a list of libraries in te 'JRE system libraries'. Optionally fill in a different 'JRE name'.
