@@ -8,7 +8,7 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 
 If you get a 'Build Failure' and none of the above reasons apply, the contents of this page might provide a solution.
 
-## Not using the correct JDK
+## Not using a correct JDK
 
 Using a wrong JDK/JRE could result in a 'Build Failure'.
 
@@ -49,4 +49,7 @@ Make sure a Java JDK of version 1.7 or higher is beeing used for building the Ma
 - Configure the Maven build to use the 'Default workspace JRE' and setup a valid JDK as default.
 - Configure the Maven build to use an 'Alternate JRE' and select a valid JDK.
 
+
+First we need to add a valid JDK (1.7 or above) to Eclipse. In the top menu of Eclipse, open the submenu 'Window' and select 'Preferences'. The following screen will be shown:
 ![Eclipse Java Preferences](assets/images/EclipseJavaPreferences.png)
+If there already is a valid JDK listed, and u wist to make use of the 'Default workspace JRE', make sure it is the default. If it's not the default then click on the checkbox to make it default.
