@@ -1,12 +1,11 @@
 # Troubleshooting Maven Build Failure
 
-When building your QAFE project, a lot of things can result in a 'Build Failure':
-- Bugs in Code
-- Wrong Configuration
-- Wrong Maven Version
+When building your QAFE project, chances are you run into a 'Build Failure'. Unfortunately there are lots of reasons why this can happen. The most common reasons for a 'Build Failure' are:
+- Bugs in source code
+- Incorrect configuration
+- Wrong Maven version
 - Maven Dependency Conflicts
-
-
+If you get a 'Build Failure' and none of the above reasons apply, please try
 
 ## Symptoms
 
