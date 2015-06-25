@@ -63,4 +63,16 @@ Select 'Standard VM' and click next.
 
 ![Eclipse Java Preferences Add 2](assets/images/EclipseJavaPreferencesAdd2.png)
 
-Enter the path to the valid JDK or select it using the directory browser. You should see a list of libraries in te 'JRE system libraries'. Optionally fill in a different 'JRE name'.
+Enter the path to the valid JDK or select it using the directory browser. You should see a list of libraries in te 'JRE system libraries'. Optionally fill in a different 'JRE name'. To complete adding the JDK, press 'Finish'.
+
+**Step 2:** Lastly we need to make sure the Maven build uses the newly added JDK. Open the 'Maven Run Configurations':
+
+![Eclipse Open Maven Configurations](assets/images/EclipseOpenMavenConfigurations.png)
+
+![Eclipse Maven Configuration Default](assets/images/EclipseMavenConfigurationDefault.png)
+
+Select the correct 'Maven Build' on the left side, then select the JRE tab. If you want to use the 'Default workspace JRE' then select that option (as shown in the above screenshot). If you wish to use an 'Alternate JRE' then select that option followed by selecting the valid JDK (as shown in the screenshot below).
+
+![Eclipse Maven Configuration Default](assets/images/EclipseMavenConfigurationAlternate.png)
+
+Apply all changes and run the Maven build, the 'Build Failed' problem should be solved.
