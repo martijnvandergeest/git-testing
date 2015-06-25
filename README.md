@@ -8,7 +8,7 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 
 If you get a 'Build Failure' and none of the above reasons apply, the contents of this page might provide a solution.
 
-## Wrong JDK
+## Cause 1: Wrong JDK
 
 Using a wrong JDK/JRE could result in a 'Build Failure'.
 
