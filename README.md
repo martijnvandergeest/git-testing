@@ -14,6 +14,16 @@
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) on project myFirstPrj: Execution default-compile of goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed: Unable to load the mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'. A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
 ```
 
+```
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ HelloQafeProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to D:\Programming\Projects\HelloQafe\HelloQafeProject\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+```
+
 ## Cause
 
 ## Solution
