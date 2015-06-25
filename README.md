@@ -1,3 +1,46 @@
+# Troubleshooting Build Failure
+
+## Symptoms
+
+```
+[INFO] — maven-compiler-plugin:3.0:compile (default-compile) @ myFirstPrj —
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.859s
+[INFO] Finished at: Tue Jun 02 11:38:52 EDT 2015
+[INFO] Final Memory: 6M/15M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) on project myFirstPrj: Execution default-compile of goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed: Unable to load the mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'. A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
+```
+
+## Cause
+
+## Solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # QAFE Platform
 QAFE Platform is a powerful web application that is able to interpret QAML files and serves the interpreted output to website visitors. By default the interpreted output is a GWT application.
 
