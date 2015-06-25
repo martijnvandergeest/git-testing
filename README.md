@@ -8,11 +8,11 @@ When building your QAFE project, chances are you run into a 'Build Failure'. Unf
 
 If you get a 'Build Failure' and none of the above reasons apply, the contents of this page might provide a solution.
 
-# Wrong JDK
+## Wrong JDK
 
 Using a wrong JDK/JRE could result in a 'Build Failure'.
 
-## Symptoms
+### Symptoms
 
 The console output after the Maven build shows something similar to the following:
 
@@ -38,11 +38,11 @@ on project HelloQafeProject: Compilation failure
 [ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
 ```
 
-## Cause
+### Cause
 
 The wrong Java software is beeing used.
 JRE's cannot be used because they do not provide compile functionality.
 
-## Solution
+### Solution
 
 Make sure a Java JDK of version 1.7 or higher is beeing used for building the Maven project.
