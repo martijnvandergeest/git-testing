@@ -11,9 +11,9 @@
 [INFO] Finished at: Tue Jun 02 11:38:52 EDT 2015
 [INFO] Final Memory: 6M/15M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile 
-(default-compile) on project myFirstPrj: Execution default-compile of goal  org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed: Unable to load the 
-mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'. 
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) on project myFirstPrj:
+Execution default-compile of goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile failed:
+Unable to load the mojo 'compile' in the plugin 'org.apache.maven.plugins:maven-compiler-plugin:3.0'.
 A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
 ```
 
