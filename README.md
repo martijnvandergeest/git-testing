@@ -14,7 +14,7 @@ Using a wrong JDK/JRE could result in a 'Build Failure'.
 
 ## Symptoms
 
-The console output shows the following (Note: message's can vary based on Maven version and/or plugins):
+The console output after the Maven build shows something similar to the following:
 
 ```
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ someProject ---
