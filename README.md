@@ -26,9 +26,23 @@ A required class is missing: org.apache.maven.plugin.compiler.CompilerMojo
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
 [ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.941s
+[INFO] Finished at: Thu Jun 25 11:46:28 CEST 2015
+[INFO] Final Memory: 6M/16M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile) 
+on project HelloQafeProject: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
 ```
 
 ## Cause
+
+The most common cause 
 
 ## Solution
 
