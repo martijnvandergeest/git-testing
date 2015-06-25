@@ -1,4 +1,12 @@
-# Troubleshooting Build Failure
+# Troubleshooting Maven Build Failure
+
+When building your QAFE project, a lot of things can result in a 'Build Failure':
+- Bugs in Code
+- Wrong Configuration
+- Wrong Maven Version
+- Maven Dependency Conflicts
+
+
 
 ## Symptoms
 
